@@ -1,0 +1,112 @@
+
+
+  /* media queries */
+  @media only screen and (min-width: 325px) and (max-width: 425px) {
+    /* image */
+    .navbar-brand img
+    {
+      position: block;
+      margin-left: 21px;
+    }
+
+    /* navbar items */
+    .nav-item
+    {
+      gap: 4rem;
+      font-weight: 500;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 10px;
+      color: #fff;
+    }
+
+    /* back image */
+    .back {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    /* welcome words */
+    .content
+      {
+          padding: 2.5rem;
+          width: 5%;
+          height: 100vh;
+          padding-left: 10px;
+          margin-left: 20px;
+      }
+    .content .title
+      {
+          font-size: 35px;
+          font-weight: 700;
+          color: whitesmoke;
+          letter-spacing: 5px;
+          margin-top: 20px;
+      }
+
+    .content .desc
+      {
+          color: #fff;
+          letter-spacing: 2px;
+          font-weight: 100;
+          margin-top: 10px;
+
+      }
+
+   
+      .space
+      {
+        margin-top: 0px;
+        padding: 0;
+      }
+    
+
+    .best-sellers
+    {
+      margin: top 0;
+      padding: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  @media (min-width: 576px) {
+    .back {
+      position: absolute;
+    }
+    
+  }
+
+  @media (max-width: 991px) {
+    .back {
+      display: block;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* 
+    Respond Between
+    - it checks both lower and upper keys exist in the breakpoints before writing this in the media query.
+  
+  */
+  /*
+      Respond between
+      Here we want to check that both the $lower and $upper keys exist in the $breakpoints map before writing the media query.
+  */
+  @media (min-width: 576px) and (max-width: 1399px) {
+    div img {
+      display: block;
+      height: 100%;
+    }
+  }
